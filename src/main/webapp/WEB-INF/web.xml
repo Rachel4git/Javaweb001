@@ -1,0 +1,35 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+  <display-name>Archetype Created Web Application</display-name>
+
+  <context-param>
+    <param-name>appname</param-name>
+    <param-value>rachel's app</param-value>
+  </context-param>
+  <context-param>
+    <param-name>app-password</param-name>
+    <param-value>333333</param-value>
+  </context-param>
+
+  <servlet>
+    <servlet-name> testdemo1</servlet-name>
+    <servlet-class>com.atrachel.javaweb.TestDemo1</servlet-class>
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>rachel</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>123456</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>testdemo1</servlet-name>
+    <url-pattern>/test1</url-pattern>
+  </servlet-mapping>
+
+</web-app>
